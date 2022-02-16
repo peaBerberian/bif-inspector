@@ -1,0 +1,30 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css" media="screen">
+<title>BIF Extractor</title>
+</head>
+  <body>
+    <h1 id="title">
+      BIF Extractor
+    </h1>
+    <p>This tool display the content of the BIF file format, which is the thumbnail archive file generally used on video streaming platform.</p>
+    <div id="selection">
+      <h2 id="selection-title">
+        File selection
+      </h2>
+      <div id="file-input-wrapper" class="choices-element choices-input">
+        <i>Choose a BIF file locally:</i><input type="file" id="file-input" name="file" />
+      </div>
+      <div id="choices-separator" class="choices-element">
+        <b><i>or</i></b>
+      </div>
+      <div id="url-input-wrapper" class="choices-element choices-input">
+        <input id="url-input" style="width: 350px;" name="url" placeholder="URL to the BIF file" />
+        <button type="button" id="url-button">OK</button>
+      </div>
+    </div>
+    <div id="content"></div>
+    <script type="text/javascript" src="./bundle.js" charset="utf-8"></script>
+  </body>
+</html>
