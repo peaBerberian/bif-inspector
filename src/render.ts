@@ -30,8 +30,8 @@ export function render(parsedBif: IBifObject) {
     `version: ${parsedBif.version}\n` +
     `image count: ${parsedBif.imageCount}\n` +
     `timescale: ${parsedBif.timescale}\n` +
-    `framewiseSeparation: ${parsedBif.framewiseSeparation}\n` +
-    "framewiseSeparation (seconds):" +
+    `framewise separation: ${parsedBif.framewiseSeparation}\n` +
+    "framewise separation (seconds):" +
     String(parsedBif.framewiseSeparation / parsedBif.timescale) +
     "\n" +
     (
