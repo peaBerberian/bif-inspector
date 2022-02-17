@@ -6,7 +6,6 @@ export interface IBifThumbnail { index : number;
 export interface IBifObject {
   version : number;
   imageCount : number;
-  timescale : number;
   framewiseSeparation: number;
   format : string | undefined;
   width : number | undefined;
@@ -96,7 +95,6 @@ function parseBif(buf : Uint8Array) : IBifObject {
 
   return { version,
            imageCount,
-           timescale: 1000,
            framewiseSeparation,
            format,
            width,
