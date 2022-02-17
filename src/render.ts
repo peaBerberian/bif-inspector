@@ -29,7 +29,7 @@ export function render(parsedBif: IBifObject) {
   metadataElt.innerText =
     `version: ${parsedBif.version}\n` +
     `image count: ${parsedBif.imageCount}\n` +
-    `framewise separation (milliseconds): ${parsedBif.framewiseSeparation}\n` +
+    `framewise separation (ms): ${parsedBif.framewiseSeparation}\n` +
     (
       parsedBif.format !== undefined ?
         `format: ${parsedBif.format}\n` :
@@ -67,8 +67,8 @@ export function render(parsedBif: IBifObject) {
     const imageInfoElt = document.createElement("pre");
     imageInfoElt.innerText =
       `index: ${image.index}\n` +
-      `time (milliseconds): ${image.ts}\n` +
-      `duration (milliseconds): ${image.duration}\n`;
+      `time (ms): ${image.ts}\n` +
+      `duration (ms): ${image.duration}\n`;
     imageInfoElt.style.position = "absolute";
     imageInfoElt.style.zIndex = "999";
     imageInfoElt.style.margin = "0px";
